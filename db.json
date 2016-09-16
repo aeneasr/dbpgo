@@ -6,7 +6,7 @@
       "accountName": "UBS",
       "currency": "EUR",
       "amount": 700229000,
-      "date": 1270360000
+      "date": 1270360000000
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "accountName": "UBS",
       "currency": "EUR",
       "amount": 13222220,
-      "date": 1470860000
+      "date": 1470860000000
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "accountName": "UBS",
       "currency": "EUR",
       "amount": 2000000,
-      "date": 1473861668
+      "date": 1473861668000
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "accountName": "DEXIA",
       "currency": "EUR",
       "amount": 700229000,
-      "date": 1270100200
+      "date": 1270100200000
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "accountName": "UBS",
       "currency": "EUR",
       "amount": 13222220,
-      "date": 1270360000
+      "date": 1270360000000
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "accountName": "BARCLAYS",
       "currency": "GBP",
       "amount": 43354534,
-      "date": 1473841668
+      "date": 1473841668000
     }
   ]
 }

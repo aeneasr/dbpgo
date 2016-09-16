@@ -34,8 +34,8 @@ var routes = Routes{
 	Route{
 		"BalanceQuery",
 		"GET",
-		"/balances",
-		[]string{"account", "", "dateFrom", "", "dateTo", ""},
+		"/balances/query",
+		[]string{},
 		BalanceQuery,
 	},
 	Route{

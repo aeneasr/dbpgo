@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"net/http"
+	"strconv"
 )
 
 func BalanceList(w http.ResponseWriter, r *http.Request) {
@@ -40,6 +41,14 @@ func BalanceQuery(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func parseDate(strNumber string) (int64, bool) {
-	return 0, false
+func parseDate(strMillis string) (int64, bool) {
+	if strMillis == "" {
+		return 0, false
+	}
+
+	if millis, err := strconv.ParseInt(strMillis, 10, 64); err != nil {
+		return 0, false
+	} else {
+		return millis, true
+	}
 }

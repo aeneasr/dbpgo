@@ -1,0 +1,52 @@
+{
+  "balances": [
+    {
+      "id": 1,
+      "account": "13452",
+      "accountName": "UBS",
+      "currency": "EUR",
+      "amount": 700229000,
+      "date": 1270360000
+    },
+    {
+      "id": 2,
+      "account": "13452",
+      "accountName": "UBS",
+      "currency": "EUR",
+      "amount": 13222220,
+      "date": 1470860000
+    },
+    {
+      "id": 3,
+      "account": "13452",
+      "accountName": "UBS",
+      "currency": "EUR",
+      "amount": 2000000,
+      "date": 1473861668
+    },
+    {
+      "id": 4,
+      "account": "77382",
+      "accountName": "DEXIA",
+      "currency": "EUR",
+      "amount": 700229000,
+      "date": 1270100200
+    },
+    {
+      "id": 5,
+      "account": "77381",
+      "accountName": "UBS",
+      "currency": "EUR",
+      "amount": 13222220,
+      "date": 1270360000
+    },
+    {
+      "id": 6,
+      "account": "99821",
+      "accountName": "BARCLAYS",
+      "currency": "GBP",
+      "amount": 43354534,
+      "date": 14738612668
+    }
+  ]
+}

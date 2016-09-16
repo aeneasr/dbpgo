@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/gorilla/handlers"
 	"log"
 	"net/http"
 	"os"
@@ -13,5 +14,5 @@ func main() {
 	}
 
 	router := NewRouter()
-	log.Fatal(http.ListenAndServe(":"+port, router))
+	log.Fatal(http.ListenAndServe(":"+port, handlers.CORS()(router)))
 }

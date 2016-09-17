@@ -1,7 +1,7 @@
 package main
 
 type Account struct {
-	Id       int    `json:"id"`
+	Id       string `json:"id"`
 	Account  string `json:"account"`
 	Name     string `json:"name"`
 	Currency string `json:"currency"`

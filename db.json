@@ -27,14 +27,14 @@
     {
       "id": 4,
       "account": "77382",
-      "accountName": "DEXIA",
+      "accountName": "BIL",
       "currency": "EUR",
       "amount": 700229000,
       "date": 1270100200000
     },
     {
       "id": 5,
-      "account": "77381",
+      "account": "13452",
       "accountName": "UBS",
       "currency": "EUR",
       "amount": 13222220,
@@ -43,10 +43,36 @@
     {
       "id": 6,
       "account": "99821",
-      "accountName": "BARCLAYS",
+      "accountName": "Barclays",
       "currency": "GBP",
       "amount": 43354534,
       "date": 1473841668000
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "account": "13452",
+      "name": "UBS",
+      "currency": "EUR",
+      "country": "Switzerland",
+      "address": "Bahnhofstr. 45, P.O. Box, CH-8098 Zurich"
+    },
+    {
+      "id": 2,
+      "account": "77382",
+      "name": "BIL",
+      "currency": "EUR",
+      "country": "Luxembourg",
+      "address": "69, Route d'Esch L-2953 Luxembourg"
+    },
+    {
+      "id": 3,
+      "account": "99821",
+      "name": "Barclays",
+      "currency": "GBP",
+      "country": "United Kingdom",
+      "address": "1 Churchill Place, London, ENG E14 5HP"
     }
   ]
 }

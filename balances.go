@@ -11,6 +11,16 @@ type Balance struct {
 
 type Balances []Balance
 
-type Database struct {
-	BalancesDB []Balance `json:"balances"`
+type BalancesByDate Balances
+
+func (b BalancesByDate) Len() int {
+	return len(b)
+}
+
+func (b BalancesByDate) Swap(i, j int) {
+	b[i], b[j] = b[j], b[i]
+}
+
+func (b BalancesByDate) Less(i, j int) bool {
+	return b[i].Timestamp < b[j].Timestamp
 }

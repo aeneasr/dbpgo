@@ -24,7 +24,6 @@ func NewRouter() *mux.Router {
 			Name(route.Name).
 			Queries(route.Queries...).
 			Handler(route.HandlerFunc)
-
 	}
 
 	return router
@@ -44,5 +43,19 @@ var routes = Routes{
 		"/balances",
 		[]string{},
 		BalanceList,
+	},
+	Route{
+		"AccountQuery",
+		"GET",
+		"/accounts/query",
+		[]string{},
+		AccountQuery,
+	},
+	Route{
+		"BalanceList",
+		"GET",
+		"/accounts",
+		[]string{},
+		AccountList,
 	},
 }

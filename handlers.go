@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"net/http"
+	"sort"
 	"strconv"
 )
 
@@ -10,7 +11,11 @@ func BalanceList(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
 
-	if err := json.NewEncoder(w).Encode(database.BalancesDB); err != nil {
+	result := make(Balances, len(database.BalancesDB))
+	copy(result, database.BalancesDB)
+	sort.Sort(sort.Reverse(BalancesByDate(result)))
+
+	if err := json.NewEncoder(w).Encode(result); err != nil {
 		panic(err)
 	}
 }
@@ -25,7 +30,7 @@ func BalanceQuery(w http.ResponseWriter, r *http.Request) {
 	dateFrom, dateFromExists := parseDate(r.URL.Query().Get("dateFrom"))
 	dateTo, dateToExists := parseDate(r.URL.Query().Get("dateTo"))
 
-	result := make([]Balance, 0)
+	result := make(Balances, 0)
 	for _, balance := range balances {
 		accountOK := account == "" || balance.Account == account
 		dateFromOK := !dateFromExists || dateFrom <= balance.Timestamp
@@ -35,6 +40,49 @@ func BalanceQuery(w http.ResponseWriter, r *http.Request) {
 			result = append(result, balance)
 		}
 	}
+
+	sort.Sort(sort.Reverse(BalancesByDate(result)))
+
+	if err := json.NewEncoder(w).Encode(result); err != nil {
+		panic(err)
+	}
+}
+
+func AccountList(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
+
+	result := make(Accounts, len(database.AccountsDB))
+	copy(result, database.AccountsDB)
+	sort.Sort(AccountsByName(result))
+
+	if err := json.NewEncoder(w).Encode(result); err != nil {
+		panic(err)
+	}
+}
+
+func AccountQuery(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
+
+	accounts := database.AccountsDB
+
+	acct := r.URL.Query().Get("account")
+	name := r.URL.Query().Get("name")
+	currency := r.URL.Query().Get("currency")
+
+	result := make([]Account, 0)
+	for _, account := range accounts {
+		accountOK := acct == "" || account.Account == acct
+		nameOK := name == "" || account.Name == name
+		currencyOK := currency == "" || account.Currency == currency
+
+		if accountOK && nameOK && currencyOK {
+			result = append(result, account)
+		}
+	}
+
+	sort.Sort(AccountsByName(result))
 
 	if err := json.NewEncoder(w).Encode(result); err != nil {
 		panic(err)

@@ -47,9 +47,41 @@
       "currency": "GBP",
       "amount": 43354534,
       "date": 1473841668000
+    },
+    {
+      "id": 7,
+      "account": "13121",
+      "accountName": "BARCLAYS BANK PLC A/C ELN",
+      "currency": "GBP",
+      "amount": 138445.90,
+      "date": 1473836715
+    },
+    {
+      "id": 8,
+      "account": "13121",
+      "accountName": "BARCLAYS BANK PLC A/C ELN",
+      "currency": "GBP",
+      "amount": 156440.00,
+      "date": 1473923115
+    },
+    {
+      "id": 9,
+      "account": "13121",
+      "accountName": "BARCLAYS BANK PLC A/C ELN",
+      "currency": "GBP",
+      "amount": 149300.20,
+      "date": 1474009515
     }
   ],
   "accounts": [
+    {
+      "id": "13121",
+      "account": "13121",
+      "name": "BARCLAYS BANK PLC A/C ELN",
+      "currency": "GBP",
+      "country": "United Kingdom",
+      "address": "25 Charing Cross Road · WC2H 0HZ London"
+    },
     {
       "id": "13452",
       "account": "13452",

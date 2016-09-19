@@ -47,6 +47,38 @@
       "currency": "GBP",
       "amount": 43354534,
       "date": 1473841668000
+    },
+    {
+      "id": 7,
+      "account": "13121",
+      "accountName": "BARCLAYS BANK PLC A/C ELN",
+      "currency": "GBP",
+      "amount": 138445.90,
+      "date": 1473836715
+    },
+    {
+      "id": 8,
+      "account": "13121",
+      "accountName": "BARCLAYS BANK PLC A/C ELN",
+      "currency": "GBP",
+      "amount": 156440.00,
+      "date": 1473923115
+    },
+    {
+      "id": 9,
+      "account": "13121",
+      "accountName": "BARCLAYS BANK PLC A/C ELN",
+      "currency": "GBP",
+      "amount": 149300.20,
+      "date": 1474009515
+    },
+    {
+      "id": 10,
+      "account": "13121",
+      "accountName": "BARCLAYS BANK PLC A/C ELN",
+      "currency": "USD",
+      "amount": 50200.00,
+      "date": 1474268715
     }
   ],
   "accounts": [

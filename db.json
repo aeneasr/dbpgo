@@ -42,11 +42,11 @@
     },
     {
       "id": 6,
-      "account": "99821",
-      "accountName": "Barclays",
+      "account": "13121",
+      "accountName": "BARCLAYS BANK PLC A/C ELN",
       "currency": "GBP",
-      "amount": 43354534,
-      "date": 1473841668000
+      "amount": 133600.00,
+      "date": 1473750315000
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "accountName": "BARCLAYS BANK PLC A/C ELN",
       "currency": "GBP",
       "amount": 138445.90,
-      "date": 1473836715
+      "date": 1473836715000
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "accountName": "BARCLAYS BANK PLC A/C ELN",
       "currency": "GBP",
       "amount": 156440.00,
-      "date": 1473923115
+      "date": 1473923115000
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "accountName": "BARCLAYS BANK PLC A/C ELN",
       "currency": "GBP",
       "amount": 149300.20,
-      "date": 1474009515
+      "date": 1474009515000
     }
   ],
   "accounts": [
@@ -97,14 +97,6 @@
       "currency": "EUR",
       "country": "Luxembourg",
       "address": "69, Route d'Esch L-2953 Luxembourg"
-    },
-    {
-      "id": "99821",
-      "account": "99821",
-      "name": "Barclays",
-      "currency": "GBP",
-      "country": "United Kingdom",
-      "address": "1 Churchill Place, London, ENG E14 5HP"
     }
   ]
 }
